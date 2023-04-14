@@ -1,5 +1,4 @@
 [![ESLint](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/eslint.yaml/badge.svg)](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/eslint.yaml)
-
 [![Unit Test](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/unitTest.yaml/badge.svg)](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/unitTest.yaml)
 
 # Introduction
