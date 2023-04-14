@@ -1,0 +1,512 @@
+{
+	"definitions": {},
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"post_on_new_member",
+		"url_label",
+		"created_on",
+		"video",
+		"owner",
+		"subscribed",
+		"privacy",
+		"created_by",
+		"role",
+		"type",
+		"premium",
+		"description",
+		"auto_join",
+		"sharefile_vault_url",
+		"tier",
+		"org",
+		"is_overdue",
+		"name",
+		"post_on_new_app",
+		"rights",
+		"url",
+		"item_accounting_info",
+		"org_id",
+		"push",
+		"space_id"
+	],
+	"properties": {
+		"post_on_new_member": {
+			"$id": "#root/post_on_new_member", 
+			"title": "Post_on_new_member", 
+			"type": "boolean",
+			"default": true
+		},
+		"url_label": {
+			"$id": "#root/url_label", 
+			"title": "Url_label", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"created_on": {
+			"$id": "#root/created_on", 
+			"title": "Created_on", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"video": {
+			"$id": "#root/video", 
+			"title": "Video", 
+			"type": "null",
+			"default": null
+		},
+		"owner": {
+			"$id": "#root/owner", 
+			"title": "Owner", 
+			"type": "object",
+			"required": [
+				"type",
+				"id"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/owner/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"id": {
+					"$id": "#root/owner/id", 
+					"title": "Id", 
+					"type": "integer",
+					"default": 0
+				}
+			}
+		}
+,
+		"subscribed": {
+			"$id": "#root/subscribed", 
+			"title": "Subscribed", 
+			"type": "boolean",
+			"default": true
+		},
+		"privacy": {
+			"$id": "#root/privacy", 
+			"title": "Privacy", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"created_by": {
+			"$id": "#root/created_by", 
+			"title": "Created_by", 
+			"type": "object",
+			"required": [
+				"user_id",
+				"space_id",
+				"image",
+				"profile_id",
+				"org_id",
+				"link",
+				"avatar",
+				"type",
+				"last_seen_on",
+				"name"
+			],
+			"properties": {
+				"user_id": {
+					"$id": "#root/created_by/user_id", 
+					"title": "User_id", 
+					"type": "integer",
+					"default": 0
+				},
+				"space_id": {
+					"$id": "#root/created_by/space_id", 
+					"title": "Space_id", 
+					"type": "null",
+					"default": null
+				},
+				"image": {
+					"$id": "#root/created_by/image", 
+					"title": "Image", 
+					"type": "null",
+					"default": null
+				},
+				"profile_id": {
+					"$id": "#root/created_by/profile_id", 
+					"title": "Profile_id", 
+					"type": "integer",
+					"default": 0
+				},
+				"org_id": {
+					"$id": "#root/created_by/org_id", 
+					"title": "Org_id", 
+					"type": "null",
+					"default": null
+				},
+				"link": {
+					"$id": "#root/created_by/link", 
+					"title": "Link", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"avatar": {
+					"$id": "#root/created_by/avatar", 
+					"title": "Avatar", 
+					"type": "null",
+					"default": null
+				},
+				"type": {
+					"$id": "#root/created_by/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"last_seen_on": {
+					"$id": "#root/created_by/last_seen_on", 
+					"title": "Last_seen_on", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/created_by/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"role": {
+			"$id": "#root/role", 
+			"title": "Role", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"type": {
+			"$id": "#root/type", 
+			"title": "Type", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"premium": {
+			"$id": "#root/premium", 
+			"title": "Premium", 
+			"type": "boolean",
+			"default": true
+		},
+		"description": {
+			"$id": "#root/description", 
+			"title": "Description", 
+			"type": "null",
+			"default": null
+		},
+		"auto_join": {
+			"$id": "#root/auto_join", 
+			"title": "Auto_join", 
+			"type": "boolean",
+			"default": true
+		},
+		"sharefile_vault_url": {
+			"$id": "#root/sharefile_vault_url", 
+			"title": "Sharefile_vault_url", 
+			"type": "null",
+			"default": null
+		},
+		"tier": {
+			"$id": "#root/tier", 
+			"title": "Tier", 
+			"type": "null",
+			"default": null
+		},
+		"org": {
+			"$id": "#root/org", 
+			"title": "Org", 
+			"type": "object",
+			"required": [
+				"premium",
+				"status",
+				"contract_status",
+				"name",
+				"sales_agent_id",
+				"rights",
+				"url",
+				"grants_count",
+				"image",
+				"user_limit",
+				"org_id",
+				"tier",
+				"role",
+				"type",
+				"domains",
+				"logo",
+				"segment",
+				"segment_size",
+				"url_label"
+			],
+			"properties": {
+				"premium": {
+					"$id": "#root/org/premium", 
+					"title": "Premium", 
+					"type": "boolean",
+					"default": true
+				},
+				"status": {
+					"$id": "#root/org/status", 
+					"title": "Status", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"contract_status": {
+					"$id": "#root/org/contract_status", 
+					"title": "Contract_status", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"name": {
+					"$id": "#root/org/name", 
+					"title": "Name", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"sales_agent_id": {
+					"$id": "#root/org/sales_agent_id", 
+					"title": "Sales_agent_id", 
+					"type": "integer",
+					"default": 0
+				},
+				"rights": {
+					"$id": "#root/org/rights", 
+					"title": "Rights", 
+					"type": "array",
+					"default": [],
+					"items":{
+						"$id": "#root/org/rights/items", 
+						"title": "Items", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					}
+				},
+				"url": {
+					"$id": "#root/org/url", 
+					"title": "Url", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"grants_count": {
+					"$id": "#root/org/grants_count", 
+					"title": "Grants_count", 
+					"type": "integer",
+					"default": 0
+				},
+				"image": {
+					"$id": "#root/org/image", 
+					"title": "Image", 
+					"type": "null",
+					"default": null
+				},
+				"user_limit": {
+					"$id": "#root/org/user_limit", 
+					"title": "User_limit", 
+					"type": "integer",
+					"default": 0
+				},
+				"org_id": {
+					"$id": "#root/org/org_id", 
+					"title": "Org_id", 
+					"type": "integer",
+					"default": 0
+				},
+				"tier": {
+					"$id": "#root/org/tier", 
+					"title": "Tier", 
+					"type": "null",
+					"default": null
+				},
+				"role": {
+					"$id": "#root/org/role", 
+					"title": "Role", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"type": {
+					"$id": "#root/org/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"domains": {
+					"$id": "#root/org/domains", 
+					"title": "Domains", 
+					"type": "array",
+					"default": []
+				},
+				"logo": {
+					"$id": "#root/org/logo", 
+					"title": "Logo", 
+					"type": "null",
+					"default": null
+				},
+				"segment": {
+					"$id": "#root/org/segment", 
+					"title": "Segment", 
+					"type": "null",
+					"default": null
+				},
+				"segment_size": {
+					"$id": "#root/org/segment_size", 
+					"title": "Segment_size", 
+					"type": "integer",
+					"default": 0
+				},
+				"url_label": {
+					"$id": "#root/org/url_label", 
+					"title": "Url_label", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"is_overdue": {
+			"$id": "#root/is_overdue", 
+			"title": "Is_overdue", 
+			"type": "boolean",
+			"default": true
+		},
+		"name": {
+			"$id": "#root/name", 
+			"title": "Name", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"post_on_new_app": {
+			"$id": "#root/post_on_new_app", 
+			"title": "Post_on_new_app", 
+			"type": "boolean",
+			"default": true
+		},
+		"rights": {
+			"$id": "#root/rights", 
+			"title": "Rights", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/rights/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			}
+		},
+		"url": {
+			"$id": "#root/url", 
+			"title": "Url", 
+			"type": "string",
+			"default": "",
+			"pattern": "^.*$"
+		},
+		"item_accounting_info": {
+			"$id": "#root/item_accounting_info", 
+			"title": "Item_accounting_info", 
+			"type": "object",
+			"required": [
+				"count",
+				"limit",
+				"percent",
+				"org_id"
+			],
+			"properties": {
+				"count": {
+					"$id": "#root/item_accounting_info/count", 
+					"title": "Count", 
+					"type": "integer",
+					"default": 0
+				},
+				"limit": {
+					"$id": "#root/item_accounting_info/limit", 
+					"title": "Limit", 
+					"type": "integer",
+					"default": 0
+				},
+				"percent": {
+					"$id": "#root/item_accounting_info/percent", 
+					"title": "Percent", 
+					"type": "integer",
+					"default": 0
+				},
+				"org_id": {
+					"$id": "#root/item_accounting_info/org_id", 
+					"title": "Org_id", 
+					"type": "integer",
+					"default": 0
+				}
+			}
+		}
+,
+		"org_id": {
+			"$id": "#root/org_id", 
+			"title": "Org_id", 
+			"type": "integer",
+			"default": 0
+		},
+		"push": {
+			"$id": "#root/push", 
+			"title": "Push", 
+			"type": "object",
+			"required": [
+				"timestamp",
+				"expires_in",
+				"channel",
+				"signature"
+			],
+			"properties": {
+				"timestamp": {
+					"$id": "#root/push/timestamp", 
+					"title": "Timestamp", 
+					"type": "integer",
+					"default": 0
+				},
+				"expires_in": {
+					"$id": "#root/push/expires_in", 
+					"title": "Expires_in", 
+					"type": "integer",
+					"default": 0
+				},
+				"channel": {
+					"$id": "#root/push/channel", 
+					"title": "Channel", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				},
+				"signature": {
+					"$id": "#root/push/signature", 
+					"title": "Signature", 
+					"type": "string",
+					"default": "",
+					"pattern": "^.*$"
+				}
+			}
+		}
+,
+		"space_id": {
+			"$id": "#root/space_id", 
+			"title": "Space_id", 
+			"type": "integer",
+			"default": 0
+		}
+	}
+}

@@ -1,0 +1,223 @@
+{
+	"definitions": {},
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"sharefile_vault_url",
+			"name",
+			"url",
+			"url_label",
+			"item_accounting_info",
+			"org_id",
+			"org",
+			"type",
+			"space_id"
+		],
+		"properties": {
+			"sharefile_vault_url": {
+				"$id": "#root/items/sharefile_vault_url", 
+				"title": "Sharefile_vault_url", 
+				"type": "null",
+				"default": null
+			},
+			"name": {
+				"$id": "#root/items/name", 
+				"title": "Name", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"url": {
+				"$id": "#root/items/url", 
+				"title": "Url", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"url_label": {
+				"$id": "#root/items/url_label", 
+				"title": "Url_label", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"item_accounting_info": {
+				"$id": "#root/items/item_accounting_info", 
+				"title": "Item_accounting_info", 
+				"type": "object",
+				"required": [
+					"count",
+					"limit",
+					"percent",
+					"org_id"
+				],
+				"properties": {
+					"count": {
+						"$id": "#root/items/item_accounting_info/count", 
+						"title": "Count", 
+						"type": "integer",
+						"default": 0
+					},
+					"limit": {
+						"$id": "#root/items/item_accounting_info/limit", 
+						"title": "Limit", 
+						"type": "integer",
+						"default": 0
+					},
+					"percent": {
+						"$id": "#root/items/item_accounting_info/percent", 
+						"title": "Percent", 
+						"type": "integer",
+						"default": 0
+					},
+					"org_id": {
+						"$id": "#root/items/item_accounting_info/org_id", 
+						"title": "Org_id", 
+						"type": "integer",
+						"default": 0
+					}
+				}
+			}
+,
+			"org_id": {
+				"$id": "#root/items/org_id", 
+				"title": "Org_id", 
+				"type": "integer",
+				"default": 0
+			},
+			"org": {
+				"$id": "#root/items/org", 
+				"title": "Org", 
+				"type": "object",
+				"required": [
+					"premium",
+					"status",
+					"contract_status",
+					"name",
+					"url",
+					"type",
+					"image",
+					"org_id",
+					"tier",
+					"url_label",
+					"domains",
+					"logo",
+					"segment",
+					"segment_size"
+				],
+				"properties": {
+					"premium": {
+						"$id": "#root/items/org/premium", 
+						"title": "Premium", 
+						"type": "boolean",
+						"default": true
+					},
+					"status": {
+						"$id": "#root/items/org/status", 
+						"title": "Status", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"contract_status": {
+						"$id": "#root/items/org/contract_status", 
+						"title": "Contract_status", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"name": {
+						"$id": "#root/items/org/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"url": {
+						"$id": "#root/items/org/url", 
+						"title": "Url", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"type": {
+						"$id": "#root/items/org/type", 
+						"title": "Type", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"image": {
+						"$id": "#root/items/org/image", 
+						"title": "Image", 
+						"type": "null",
+						"default": null
+					},
+					"org_id": {
+						"$id": "#root/items/org/org_id", 
+						"title": "Org_id", 
+						"type": "integer",
+						"default": 0
+					},
+					"tier": {
+						"$id": "#root/items/org/tier", 
+						"title": "Tier", 
+						"type": "null",
+						"default": null
+					},
+					"url_label": {
+						"$id": "#root/items/org/url_label", 
+						"title": "Url_label", 
+						"type": "string",
+						"default": "",
+						"pattern": "^.*$"
+					},
+					"domains": {
+						"$id": "#root/items/org/domains", 
+						"title": "Domains", 
+						"type": "array",
+						"default": []
+					},
+					"logo": {
+						"$id": "#root/items/org/logo", 
+						"title": "Logo", 
+						"type": "null",
+						"default": null
+					},
+					"segment": {
+						"$id": "#root/items/org/segment", 
+						"title": "Segment", 
+						"type": "null",
+						"default": null
+					},
+					"segment_size": {
+						"$id": "#root/items/org/segment_size", 
+						"title": "Segment_size", 
+						"type": "integer",
+						"default": 0
+					}
+				}
+			}
+,
+			"type": {
+				"$id": "#root/items/type", 
+				"title": "Type", 
+				"type": "string",
+				"default": "",
+				"pattern": "^.*$"
+			},
+			"space_id": {
+				"$id": "#root/items/space_id", 
+				"title": "Space_id", 
+				"type": "integer",
+				"default": 0
+			}
+		}
+	}
+
+}

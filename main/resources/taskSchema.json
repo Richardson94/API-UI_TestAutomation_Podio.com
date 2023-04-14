@@ -1,0 +1,170 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "presence": {
+      "type": "object",
+      "properties": {
+        "ref_type": {
+          "type": "string"
+        },
+        "ref_id": {
+          "type": "integer"
+        },
+        "user_id": {
+          "type": "integer"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ref_type",
+        "ref_id",
+        "user_id",
+        "signature"
+      ]
+    },
+    "created_on": {
+      "type": "string"
+    },
+    "due_on": {
+      "type": "string"
+    },
+    "responsible": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "integer"
+        },
+        "space_id": {
+          "type": "null"
+        },
+        "image": {
+          "type": "null"
+        },
+        "profile_id": {
+          "type": "integer"
+        },
+        "org_id": {
+          "type": "null"
+        },
+        "link": {
+          "type": "string"
+        },
+        "avatar": {
+          "type": "null"
+        },
+        "type": {
+          "type": "string"
+        },
+        "last_seen_on": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "user_id",
+        "space_id",
+        "image",
+        "profile_id",
+        "org_id",
+        "link",
+        "avatar",
+        "type",
+        "last_seen_on",
+        "name"
+      ]
+    },
+    "due_time": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "started": {
+      "type": "boolean"
+    },
+    "link": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "integer"
+    },
+    "rights": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "push": {
+      "type": "object",
+      "properties": {
+        "timestamp": {
+          "type": "integer"
+        },
+        "expires_in": {
+          "type": "integer"
+        },
+        "channel": {
+          "type": "string"
+        },
+        "signature": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "timestamp",
+        "expires_in",
+        "channel",
+        "signature"
+      ]
+    },
+    "external_id": {
+      "type": "null"
+    }
+  },
+  "required": [
+    "status",
+    "presence",
+    "text",
+    "created_on",
+    "due_on",
+    "responsible",
+    "due_time",
+    "due_date",
+    "description",
+    "started",
+    "link",
+    "task_id",
+    "rights",
+    "push"
+  ]
+}

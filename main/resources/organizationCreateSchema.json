@@ -1,0 +1,19 @@
+{
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string"
+      },
+      "url_label": {
+        "type": "string"
+      },
+      "org_id": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "url",
+      "url_label",
+      "org_id"
+    ]
+}

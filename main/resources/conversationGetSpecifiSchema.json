@@ -1,0 +1,160 @@
+{
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "event_id",
+      "created_via",
+      "created_by",
+      "created_on",
+      "action",
+      "data"
+    ],
+    "properties": {
+      "event_id": {
+        "type": "integer",
+        "title": "The event_id Schema"
+      },
+      "created_via": {
+        "type": "object",
+        "title": "The created_via Schema",
+        "required": ["url", "auth_client_id", "display", "name", "id"],
+        "properties": {
+          "url": {
+            "type": "null",
+            "title": "The url Schema"
+          },
+          "auth_client_id": {
+            "type": "integer",
+            "title": "The auth_client_id Schema"
+          },
+          "display": {
+            "type": "boolean",
+            "title": "The display Schema"
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema"
+          },
+          "id": {
+            "type": "integer",
+            "title": "The id Schema"
+          }
+        },
+        "examples": []
+      },
+      "created_by": {
+        "type": "object",
+        "title": "The created_by Schema",
+        "required": [
+          "user_id",
+          "name",
+          "url",
+          "type",
+          "image",
+          "avatar_type",
+          "avatar",
+          "id",
+          "avatar_id",
+          "last_seen_on"
+        ],
+        "properties": {
+          "user_id": {
+            "type": "integer",
+            "title": "The user_id Schema"
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema"
+          },
+          "url": {
+            "type": "string",
+            "title": "The url Schema"
+          },
+          "type": {
+            "type": "string",
+            "title": "The type Schema"
+          },
+          "image": {
+            "type": "null",
+            "title": "The image Schema"
+          },
+          "avatar_type": {
+            "type": "string",
+            "title": "The avatar_type Schema"
+          },
+          "avatar": {
+            "type": "null",
+            "title": "The avatar Schema"
+          },
+          "id": {
+            "type": "integer",
+            "title": "The id Schema"
+          },
+          "avatar_id": {
+            "type": "null",
+            "title": "The avatar_id Schema"
+          },
+          "last_seen_on": {
+            "type": "string",
+            "title": "The last_seen_on Schema"
+          }
+        },
+        "examples": []
+      },
+      "created_on": {
+        "type": "string",
+        "title": "The created_on Schema"
+      },
+      "action": {
+        "type": "string",
+        "title": "The action Schema"
+      },
+      "data": {
+        "type": "object",
+        "title": "The data Schema",
+        "required": [
+          "files",
+          "text",
+          "embed_file",
+          "created_on",
+          "embed",
+          "message_id"
+        ],
+        "properties": {
+          "files": {
+            "type": "array",
+            "title": "The files Schema",
+            "items": {}
+          },
+          "text": {
+            "type": "string",
+            "title": "The text Schema"
+          },
+          "embed_file": {
+            "type": "null",
+            "title": "The embed_file Schema"
+          },
+          "created_on": {
+            "type": "string",
+            "title": "The created_on Schema"
+          },
+          "embed": {
+            "type": "null",
+            "title": "The embed Schema"
+          },
+          "message_id": {
+            "type": "integer",
+            "title": "The message_id Schema"
+          }
+        },
+        "examples": []
+      }
+    },
+    "examples": []
+  },
+  "examples": []
+}
