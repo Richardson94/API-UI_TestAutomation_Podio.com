@@ -13,7 +13,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TEST_TOKEN }}
       - name: Configure Git
         run: |
           git config user.name "Richardson94"
@@ -23,6 +23,6 @@ jobs:
           git checkout -B ${{ github.event.pull_request.base.ref }}
           git merge --no-ff ${{ github.event.pull_request.head.ref }}
       - name: Push Changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TEST_TOKEN }}
