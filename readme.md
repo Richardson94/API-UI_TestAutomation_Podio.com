@@ -1,7 +1,7 @@
 # Introduction
 
 <img src="https://es.brazilianexperience.com/wp-content/uploads/2019/11/Podio-logo.png">
-**Podio.com** is a cloud-based project management and collaboration platform that allows teams to organize, manage, and communicate on projects, tasks, and activities. It was founded in 2009 and acquired by Citrix Systems in 2012.
+<strong>Podio.com</strong> is a cloud-based project management and collaboration platform that allows teams to organize, manage, and communicate on projects, tasks, and activities. It was founded in 2009 and acquired by Citrix Systems in 2012.
 
 With Podio, users can create workspaces, which are essentially customizable dashboards that allow team members to collaborate, share files, and communicate in real-time. Workspaces can be customized with various apps and tools, such as task management, calendars, discussions, and document management.
 
