@@ -1,6 +1,5 @@
 const { Validator } = require('jsonschema');
 const fileReader = require('./file_reader');
-const varia = 2;
 
 module.exports.validateSchemaFromPath = function (response, schemaPath) {
   const validator = new Validator();
