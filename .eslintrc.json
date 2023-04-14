@@ -19,7 +19,6 @@
     "eol-last": "error",
     "prefer-arrow-callback": "error",
     "no-trailing-spaces": "error",
-    "allowNamedFunctions": false,
-    "allowUnboundThis": true
+    "allowNamedFunctions": 0
   }
 }
