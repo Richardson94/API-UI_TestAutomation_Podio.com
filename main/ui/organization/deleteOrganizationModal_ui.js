@@ -13,7 +13,7 @@ class DeleteOrganizationModalPodio {
   hamburgerIcon = By.css('.search.image-block.tooltip-delayed.tooltip-html .img div');
   mainContainer = By.css('.grid.main');
   titleLabel = By.css('.modal-delete-confirm-title');
- 
+
   /**
    * Delete an organization
    * @param {text} textForLeaveOrganziation
@@ -24,10 +24,10 @@ class DeleteOrganizationModalPodio {
     await actions.setText(this.leaveOrganizationInputText, textForLeaveOrganziation);
     await actions.clickOn(this.leaveButton);
   }
-  
+
   /**
    * Delete an organization
-   * @param {text} textForDelete 
+   * @param {text} textForDelete
    * @returns true if the parameter textForDelete not is validate, false othercase
    */
   async verifyValidateLeaveOrganizationModal(textForDelete){
@@ -36,10 +36,10 @@ class DeleteOrganizationModalPodio {
     await actions.setText(this.leaveOrganizationInputText, textForDelete);
     await conditions.untilLocated(this.leaveOrganizationInputText);
     await actions.clickOn(this.leaveButton);
-    let isValidate = await actions.getAttributeValue(this.validateIcon,"class") ;
+    const isValidate = await actions.getAttributeValue(this.validateIcon,"class") ;
     return isValidate.includes("error");
   }
-  
+
   /**
    * Clean field leave organization
   */
@@ -47,11 +47,11 @@ class DeleteOrganizationModalPodio {
    await conditions.untilLocated(this.leaveOrganizationInputText);
    await conditions.untilLocated(this.leaveButton);
    await actions.clickOn(this.titleLabel);
-   let element = await actions.getWebElement(this.leaveOrganizationInputText)
+   const element = await actions.getWebElement(this.leaveOrganizationInputText)
    element.clear();
    await actions.clickOn(this.titleLabel);
   }
- 
+
   /**
    * Close modal leave organization
    */
@@ -62,7 +62,7 @@ class DeleteOrganizationModalPodio {
     await actions.clickOn(this.mainContainer);
     await conditions.untilLocated(this.hamburgerIcon);
   }
- 
+
 }
 
 const modalDeleteOrganizationPodio = new DeleteOrganizationModalPodio();

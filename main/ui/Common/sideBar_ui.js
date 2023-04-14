@@ -19,7 +19,7 @@ class SideBarPodio {
   listOrganizationsLabels = By.css('#org-nav .org-navigation .header .bd .vertical-align-middle div');
   contentTreeDodsList = By.css('.action-dropdown-wrapper ul');
   elementContentTreeDodsList = By.css('.action-dropdown-wrapper.align-left .leave-organization');
-  
+
   /**
    * Workspaces into Podio
    * verify the Side Menu

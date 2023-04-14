@@ -13,7 +13,7 @@ class CreateOrganizationModalPodio {
   createButton = By.css('input.next.button-new.primary');
   pushNotification = By.css('li.notification.flashmessage.notice div');
   tooltipErrorIcon = By.css('#organization_setup .required');
- 
+
   /**
    * Create new Organization into PODIO
    */
@@ -23,7 +23,7 @@ class CreateOrganizationModalPodio {
     await actions.setText(this.nameText, nameOrganization);
     await conditions.untilLocated(this.numberEmployeesList);
     await actions.clickOn(this.numberEmployeesList);
-    
+
     const selectElement = await actions.driver.findElement(
       this.numberEmployeesSelect
       );
@@ -57,13 +57,13 @@ class CreateOrganizationModalPodio {
     let isDisplayed=true;
     await Promise.all(
       elementsErrors.map(async (element) => {
-        let data = await element.getAttribute('class');
+        const data = await element.getAttribute('class');
         if (!data.includes("error")) {
           isDisplayed=false;
         }
       })
     );
-    
+
     return await isDisplayed;
   }
 

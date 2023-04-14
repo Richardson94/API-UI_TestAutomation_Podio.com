@@ -5,19 +5,19 @@ const actions = require('../../../core/utils/actions');
 const conditions = require('../../../core/utils/conditions');
 const { By} = require('selenium-webdriver');
 
-class SettingsOrganizationPodio {  
+class SettingsOrganizationPodio {
   dropFileLabel = By.css('.dropzone');
   updateNameText = By.id('organization_name');
   notificationUpdate= By.css('.push-notifications-wrapper');
   saveUpateButton = By.css('.button-new.primary');
   nameOrganizationSettingLabel = By.css('.org-content.edit h3');
   optionLeaveOrganization = By.css('.delete-org-old.button-new.secondary');
-  
+
   /**
    * Update an organization
    * @param {text} updateName is the new name of the organization
    */
-  async updateOrganizationSettings(updateName){   
+  async updateOrganizationSettings(updateName){
     await conditions.untilLocated(this.dropFileLabel);
     await conditions.untilLocated(this.saveUpateButton);
     await actions.setText(this.updateNameText, updateName);
@@ -26,7 +26,7 @@ class SettingsOrganizationPodio {
     await conditions.untilLocated(this.saveUpateButton);
     await conditions.untilLocated(this.dropFileLabel);
   }
- 
+
   /**
    * Get the name organization
    * @returns the name the organization

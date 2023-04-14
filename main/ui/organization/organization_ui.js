@@ -30,7 +30,7 @@ class OrganizationPodio {
   orgForDeleteButton = By.css(`#org-nav .header:not(div[data-id="${configurationMannager.environment.id_org}"])`);
   settingOrganizationLabel = By.css('a[href$="/organization/edit"]');
   leaveOrganizationLabel = By.css('.action-dropdown-wrapper .leave-organization');
-  
+
   /**
    * Create new Organization into PODIO
   */
@@ -40,7 +40,7 @@ class OrganizationPodio {
    await headerPodio.openOptionAccount(this.newOrganizationSelect);
    await modalCreateOrganizationPodio.createNewOrganizationModal(nameOrganization);
   }
- 
+
   async listLabelsContainers() {
     const dataContainers = {
       employee: await actions.getText(this.titleEmployeeLabel),
@@ -55,10 +55,10 @@ class OrganizationPodio {
   /**
    * Get List Organizations created
    */
-  async listOrganizations(){   
+  async listOrganizations(){
     return await sideBarPodio.listOrganizations();
   }
- 
+
   /**
    * Create Organizations
    * @param {array} listNameOrganizations
@@ -78,7 +78,7 @@ class OrganizationPodio {
   async deleteOrganization(textForDelete){
       await modalDeleteOrganizationPodio.deleteOrganizationModal(textForDelete);
   }
-  
+
   /**
    * Update an organization
    * @param {text} updateName is the new name of the organization
@@ -90,7 +90,7 @@ class OrganizationPodio {
     await sideBarPodio.openMenuThreeDotsOfSideBar(this.orgForDeleteButton,this.threeDotsButton, this.settingOrganizationLabel);
     await settingsOrganizationPodio.updateOrganizationSettings(updateName)
   }
-  
+
   /**
    * Go to home page Podio
    */
@@ -117,7 +117,7 @@ class OrganizationPodio {
   await conditions.untilLocated(this.workspaceOrAppIcon);
   await sideBarPodio.openMenuThreeDotsOfSideBar(this.orgForDeleteButton,this.threeDotsButton, this.settingOrganizationLabel);
  }
-  
+
  /**
    * Sidebar leave Organization into PODIO
   */

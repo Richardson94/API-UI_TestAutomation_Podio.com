@@ -154,7 +154,7 @@ When('the user selects a past date', async () => {
   await taskPodio.pastDate();
 });
 
-When('the user tries to create the task', async function () {
+When('the user tries to create the task', async () => {
   await actions.clickOn(taskPodio.createTaskButton);
 });
 
@@ -180,7 +180,7 @@ When('the user sets the label name as {string}', async function (labelName) {
   await labelInTaskPodio.create(this.labelName);
 });
 
-When('the user selects a color', async function () {
+When('the user selects a color', async () => {
   await labelInTaskPodio.selectColor();
 });
 
@@ -190,17 +190,17 @@ Then('the section should display the label created', async function () {
   expect(result).toEqual(this.labelName);
 });
 
-Then('the page should display the label created', async function () {
+Then('the page should display the label created', async () => {
   await conditions.untilLocated(labelInTaskPodio.labelValidate);
   const result = await actions.getText(labelInTaskPodio.labelCreatedLabel);
   expect(result).toEqual('API testing');
 });
 
-When('the user deletes the label created', async function () {
+When('the user deletes the label created', async () => {
   await deleteModalPodio.deleteLabel();
 });
 
-Then('the label should be removed of the page', async function () {
+Then('the label should be removed of the page', async () => {
   const result = await conditions.isNotVisible(labelInTaskPodio.labelValidate);
   expect(result).toBe(true);
 });
@@ -228,7 +228,7 @@ When('the user creates a label for task', async function () {
   await labelInTaskPodio.selectColor();
 });
 
-When('the user assigns a label to the task', async function () {
+When('the user assigns a label to the task', async () => {
   await taskPodio.assignLabel();
 });
 
@@ -239,20 +239,20 @@ When('the user assigns a task to a Contact', async function () {
   );
 });
 
-When('the user deletes the task assigned', async function () {
+When('the user deletes the task assigned', async () => {
   await taskSpecificPodio.closeTaskPage();
   await taskPodio.deleteTaskDelegated();
 });
 
 Then(
   'the page should remove the task from the My delegated tasks',
-  async function () {
+  async () => {
     const result = await conditions.isNotVisible(taskPodio.taskGrouphidden);
     expect(result).toBe(true);
   }
 );
 
-Then('the page should not display any label created', async function () {
+Then('the page should not display any label created', async () => {
   const result = await conditions.isVisible(labelInTaskPodio.labelIDCreated);
   expect(result).toBe(false);
 });

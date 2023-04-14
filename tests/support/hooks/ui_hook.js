@@ -13,7 +13,7 @@ const sideBarPodio = require('../../../main/ui/Common/sideBar_ui');
 const space_ui = require('../../../main/ui/space/space_ui');
 const editSpace_ui = require('../../../main/ui/space/editSpace_ui');
 
-Before({ tags: '@gui', timeout: 30000 }, async function () {
+Before({ tags: '@gui', timeout: 30000 }, async () => {
   logger.info('Opening the WebDriver....');
   await DriverManager.init();
   if (configurationManager.environment.sessionExist) {
@@ -27,7 +27,7 @@ Before({ tags: '@gui', timeout: 30000 }, async function () {
   }
 });
 
-After({ tags: '@conversation' }, async function () {
+After({ tags: '@conversation' }, async () => {
   logger.info('Deleting All Cookies..');
   logger.name = 'test';
   await DriverManager.cleanNameCookie('chat-pane-is-open');
@@ -133,7 +133,7 @@ After({ tags: '@deleteLabelByAPI' }, async function () {
   await labelApi.delete(this.labelID);
 });
 
-After({ tags: '@leaveConversationGroup' }, async function () {
+After({ tags: '@leaveConversationGroup' }, async () => {
   logger.info(`Leaving conversation created hook ...`);
   const dropDownButton = By.xpath("//a[contains(.,'Actions')]");
   const selectedOption = By.xpath("//a[.='Leave conversation']");
@@ -148,7 +148,7 @@ After({ tags: '@leaveConversationGroup' }, async function () {
   await actions.clickOn(confirmButton);
 });
 
-After({ tags: '@leaveConversationSingle' }, async function () {
+After({ tags: '@leaveConversationSingle' }, async () => {
   logger.info(`Adding Contact into conversation to leave hook ...`);
   const dropDownButton = By.className('action-dropdown align-left');
   const selectedAddOption = By.xpath("//a[.='Add connections']");
@@ -186,7 +186,7 @@ After({ tags: '@leaveConversationSingle' }, async function () {
   await actions.clickOn(confirmButton);
 });
 
-After({ tags: '@deleteSpace', timeout: 30000 }, async function () {
+After({ tags: '@deleteSpace', timeout: 30000 }, async () => {
   const superMenuButton = By.className('icon-16 icon-wrench');
   const deleteWPButton = By.className('delete-space');
   const deleteInput = By.css("input[class='equalToData required']");
@@ -225,7 +225,7 @@ AfterStep('@doActionSideMenu', async function ({ pickleStep }) {
   }
 });
 
-After({ tags: '@deleteOrganization', timeout: 30000 }, async function () {
+After({ tags: '@deleteOrganization', timeout: 30000 }, async () => {
   logger.info('Deleting Organization ...');
   const workspaceOrAppIcon = By.css('.space-switcher .search');
   const listOrganizationsLabels = By.css('#org-nav .org-navigation .header');
@@ -247,7 +247,7 @@ After({ tags: '@deleteOrganization', timeout: 30000 }, async function () {
   );
 });
 
-AfterAll(async function () {
+AfterAll(async () => {
   logger.info('Closing the WebDriver....');
   await DriverManager.quit();
 });
