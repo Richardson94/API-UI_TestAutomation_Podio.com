@@ -1,0 +1,7 @@
+{
+  "environment": "staging",
+  "logLevel": {
+    "console": "debug",
+    "file": "info"
+  }
+}
