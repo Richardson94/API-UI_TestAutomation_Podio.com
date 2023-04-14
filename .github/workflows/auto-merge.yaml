@@ -23,6 +23,6 @@ jobs:
           git checkout -B ${{ github.event.pull_request.base.ref }}
           git merge --no-ff ${{ github.event.pull_request.head.ref }}
       - name: Push Changes
-        uses: ad-m/github-push-action@main
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.TEST_TOKEN }}
