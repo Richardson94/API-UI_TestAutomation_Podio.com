@@ -20,7 +20,8 @@ jobs:
           git config user.email "richcori94@gmail.com"
       - name: Merge Pull Request
         run: |
-          git checkout -B ${{ github.event.pull_request.base.ref }}
+          git merge --no-ff ${{ github.event.pull_request.head.ref }}
+          git push origin ${{ github.event.pull_request.base.ref }}
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
