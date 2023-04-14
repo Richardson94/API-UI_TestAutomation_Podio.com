@@ -1,0 +1,17 @@
+{
+  "staging": {
+    "apiUrl": "https://api.podio.com",
+    "guiUrl": "https://podio.com/",
+    "users": {
+      "admin": {
+        "Authorization": "",
+        "Email": "",
+        "Password": ""
+      },
+      "userPage": {
+        "cookie": "",
+        "x-csrf-token": ""
+      }
+    }
+  }
+}
