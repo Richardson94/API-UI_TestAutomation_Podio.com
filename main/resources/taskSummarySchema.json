@@ -1,0 +1,71 @@
+{
+    "type": "object",
+    "properties": {
+      "reassigned": {
+        "type": "object",
+        "properties": {
+          "completed_yesterday": {
+            "type": "integer"
+          },
+          "upcoming": {
+            "type": "integer"
+          },
+          "later": {
+            "type": "integer"
+          },
+          "tomorrow": {
+            "type": "integer"
+          },
+          "today": {
+            "type": "integer"
+          },
+          "overdue": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "completed_yesterday",
+          "upcoming",
+          "later",
+          "tomorrow",
+          "today",
+          "overdue"
+        ]
+      },
+      "own": {
+        "type": "object",
+        "properties": {
+          "completed_yesterday": {
+            "type": "integer"
+          },
+          "upcoming": {
+            "type": "integer"
+          },
+          "later": {
+            "type": "integer"
+          },
+          "tomorrow": {
+            "type": "integer"
+          },
+          "today": {
+            "type": "integer"
+          },
+          "overdue": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "completed_yesterday",
+          "upcoming",
+          "later",
+          "tomorrow",
+          "today",
+          "overdue"
+        ]
+      }
+    },
+    "required": [
+      "reassigned",
+      "own"
+    ]
+  }

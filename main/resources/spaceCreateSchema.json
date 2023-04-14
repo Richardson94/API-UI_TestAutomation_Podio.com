@@ -1,0 +1,13 @@
+{
+	"properties": {
+		"url": { 
+			"type": "string"
+		},
+		"space_id": { 
+			"type": "integer"
+		},
+		"full_url": { 
+			"type": "string"
+		}
+	}
+}

@@ -1,0 +1,282 @@
+{
+  "type": "array",
+  "default": [],
+  "title": "Root Schema",
+  "items": {
+    "type": "object",
+    "title": "A Schema",
+    "required": [
+      "unread_count",
+      "presence",
+      "excerpt",
+      "participants",
+      "created_by",
+      "push",
+      "created_on",
+      "last_event_on",
+      "conversation_id",
+      "starred",
+      "unread",
+      "type",
+      "subject"
+    ],
+    "properties": {
+      "unread_count": {
+        "type": "integer",
+        "title": "The unread_count Schema"
+      },
+      "presence": {
+        "type": "object",
+        "title": "The presence Schema",
+        "required": ["ref_type", "ref_id", "user_id", "signature"],
+        "properties": {
+          "ref_type": {
+            "type": "string",
+            "title": "The ref_type Schema"
+          },
+          "ref_id": {
+            "type": "integer",
+            "title": "The ref_id Schema"
+          },
+          "user_id": {
+            "type": "integer",
+            "title": "The user_id Schema"
+          },
+          "signature": {
+            "type": "string",
+            "title": "The signature Schema"
+          }
+        },
+        "examples": []
+      },
+      "excerpt": {
+        "type": "string",
+        "title": "The excerpt Schema"
+      },
+      "participants": {
+        "type": "array",
+        "title": "The participants Schema",
+        "items": {
+          "type": "object",
+          "title": "A Schema",
+          "required": [
+            "user_id",
+            "space_id",
+            "image",
+            "profile_id",
+            "org_id",
+            "link",
+            "avatar",
+            "type",
+            "last_seen_on",
+            "name"
+          ],
+          "properties": {
+            "user_id": {
+              "type": "integer",
+              "title": "The user_id Schema"
+            },
+            "space_id": {
+              "type": "null",
+              "title": "The space_id Schema"
+            },
+            "image": {
+              "type": ["object", "null"],
+              "title": "The image Schema",
+              "required": [
+                "hosted_by",
+                "hosted_by_humanized_name",
+                "thumbnail_link",
+                "link",
+                "file_id",
+                "external_file_id",
+                "link_target"
+              ],
+              "properties": {
+                "hosted_by": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The hosted_by Schema"
+                },
+                "hosted_by_humanized_name": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The hosted_by_humanized_name Schema"
+                },
+                "thumbnail_link": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The thumbnail_link Schema"
+                },
+                "link": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The link Schema"
+                },
+                "file_id": {
+                  "type": "integer",
+                  "default": 0,
+                  "title": "The file_id Schema"
+                },
+                "external_file_id": {
+                  "type": "null",
+                  "default": null,
+                  "title": "The external_file_id Schema"
+                },
+                "link_target": {
+                  "type": "string",
+                  "default": "",
+                  "title": "The link_target Schema"
+                }
+              },
+              "examples": []
+            },
+            "profile_id": {
+              "type": "integer",
+              "title": "The profile_id Schema"
+            },
+            "org_id": {
+              "type": "null",
+              "title": "The org_id Schema"
+            },
+            "link": {
+              "type": "string",
+              "title": "The link Schema"
+            },
+            "avatar": {
+              "type": ["integer", "null"],
+              "title": "The avatar Schema"
+            },
+            "type": {
+              "type": "string",
+              "title": "The type Schema"
+            },
+            "last_seen_on": {
+              "type": "string",
+              "title": "The last_seen_on Schema"
+            },
+            "name": {
+              "type": "string",
+              "title": "The name Schema"
+            }
+          },
+          "examples": []
+        },
+        "examples": []
+      },
+      "created_by": {
+        "type": "object",
+        "title": "The created_by Schema",
+        "required": [
+          "user_id",
+          "name",
+          "url",
+          "type",
+          "image",
+          "avatar_type",
+          "avatar",
+          "id",
+          "avatar_id",
+          "last_seen_on"
+        ],
+        "properties": {
+          "user_id": {
+            "type": "integer",
+            "title": "The user_id Schema"
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema"
+          },
+          "url": {
+            "type": "string",
+            "title": "The url Schema"
+          },
+          "type": {
+            "type": "string",
+            "title": "The type Schema"
+          },
+          "image": {
+            "type": "null",
+            "title": "The image Schema"
+          },
+          "avatar_type": {
+            "type": "string",
+            "title": "The avatar_type Schema"
+          },
+          "avatar": {
+            "type": "null",
+            "title": "The avatar Schema"
+          },
+          "id": {
+            "type": "integer",
+            "title": "The id Schema"
+          },
+          "avatar_id": {
+            "type": "null",
+            "title": "The avatar_id Schema"
+          },
+          "last_seen_on": {
+            "type": "string",
+            "title": "The last_seen_on Schema"
+          }
+        },
+        "examples": []
+      },
+      "push": {
+        "type": "object",
+        "title": "The push Schema",
+        "required": ["timestamp", "expires_in", "channel", "signature"],
+        "properties": {
+          "timestamp": {
+            "type": "integer",
+            "title": "The timestamp Schema"
+          },
+          "expires_in": {
+            "type": "integer",
+            "title": "The expires_in Schema"
+          },
+          "channel": {
+            "type": "string",
+            "title": "The channel Schema"
+          },
+          "signature": {
+            "type": "string",
+            "title": "The signature Schema"
+          }
+        },
+        "examples": []
+      },
+      "created_on": {
+        "type": "string",
+        "title": "The created_on Schema"
+      },
+      "last_event_on": {
+        "type": "string",
+        "title": "The last_event_on Schema"
+      },
+      "conversation_id": {
+        "type": "integer",
+        "title": "The conversation_id Schema"
+      },
+      "starred": {
+        "type": "boolean",
+        "title": "The starred Schema"
+      },
+      "unread": {
+        "type": "boolean",
+        "title": "The unread Schema"
+      },
+      "type": {
+        "type": "string",
+        "title": "The type Schema"
+      },
+      "subject": {
+        "type": ["string", "null"],
+        "title": "The subject Schema"
+      }
+    },
+    "examples": []
+  },
+  "examples": []
+}

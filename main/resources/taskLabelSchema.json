@@ -1,0 +1,11 @@
+{
+    "type": "object",
+    "properties": {
+      "label_id": {
+        "type": "integer"
+      }
+    },
+    "required": [
+      "label_id"
+    ]
+  }

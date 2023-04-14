@@ -1,0 +1,262 @@
+{
+    "type": "array",
+    "items": [
+      {
+        "type": "object",
+        "properties": {
+          "premium": {
+            "type": "boolean"
+          },
+          "status": {
+            "type": "string"
+          },
+          "contract_status": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sales_agent_id": {
+            "type": "integer"
+          },
+          "rights": {
+            "type": "array",
+            "items": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "grants_count": {
+            "type": "integer"
+          },
+          "image": {
+            "type": "null"
+          },
+          "user_limit": {
+            "type": "integer"
+          },
+          "org_id": {
+            "type": "integer"
+          },
+          "rank": {
+            "type": "integer"
+          },
+          "tier": {
+            "type": "null"
+          },
+          "spaces": {
+            "type": "array",
+            "items": [
+              {
+                "type": "object",
+                "properties": {
+                  "archived": {
+                    "type": "boolean"
+                  },
+                  "sharefile_vault_url": {
+                    "type": "null"
+                  },
+                  "premium": {
+                    "type": "boolean"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "rights": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "url_label": {
+                    "type": "string"
+                  },
+                  "item_accounting_info": {
+                    "type": "object",
+                    "properties": {
+                      "count": {
+                        "type": "integer"
+                      },
+                      "limit": {
+                        "type": "integer"
+                      },
+                      "percent": {
+                        "type": "integer"
+                      },
+                      "org_id": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "count",
+                      "limit",
+                      "percent",
+                      "org_id"
+                    ]
+                  },
+                  "top": {
+                    "type": "boolean"
+                  },
+                  "org_id": {
+                    "type": "integer"
+                  },
+                  "rank": {
+                    "type": "integer"
+                  },
+                  "tier": {
+                    "type": "null"
+                  },
+                  "role": {
+                    "type": "string"
+                  },
+                  "push": {
+                    "type": "object",
+                    "properties": {
+                      "timestamp": {
+                        "type": "integer"
+                      },
+                      "expires_in": {
+                        "type": "integer"
+                      },
+                      "channel": {
+                        "type": "string"
+                      },
+                      "signature": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "timestamp",
+                      "expires_in",
+                      "channel",
+                      "signature"
+                    ]
+                  },
+                  "type": {
+                    "type": "string"
+                  },
+                  "space_id": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "archived",
+                  "sharefile_vault_url",
+                  "premium",
+                  "name",
+                  "rights",
+                  "url",
+                  "url_label",
+                  "item_accounting_info",
+                  "top",
+                  "org_id",
+                  "rank",
+                  "tier",
+                  "role",
+                  "push",
+                  "type",
+                  "space_id"
+                ]
+              }
+            ]
+          },
+          "role": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "domains": {
+            "type": "array",
+            "items": {}
+          },
+          "logo": {
+            "type": "null"
+          },
+          "segment": {
+            "type": "null"
+          },
+          "segment_size": {
+            "type": "null"
+          },
+          "url_label": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "premium",
+          "status",
+          "contract_status",
+          "name",
+          "sales_agent_id",
+          "rights",
+          "url",
+          "grants_count",
+          "image",
+          "user_limit",
+          "org_id",
+          "rank",
+          "tier",
+          "spaces",
+          "role",
+          "type",
+          "domains",
+          "logo",
+          "segment",
+          "segment_size",
+          "url_label"
+        ]
+      }
+    ]
+  }

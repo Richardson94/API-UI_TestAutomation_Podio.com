@@ -1,5 +1,6 @@
 {
   "staging": {
+    "library": "axios",
     "apiUrl": "https://api.podio.com",
     "guiUrl": "https://podio.com/",
     "users": {
