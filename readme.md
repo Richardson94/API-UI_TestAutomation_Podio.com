@@ -1,3 +1,5 @@
+[![test-project](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/build.yaml/badge.svg)](https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/actions/workflows/build.yaml)
+
 # Introduction
 
 <img src="https://es.brazilianexperience.com/wp-content/uploads/2019/11/Podio-logo.png">
