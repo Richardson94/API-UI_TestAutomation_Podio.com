@@ -1,0 +1,22 @@
+{
+  "name": "podio_test_automation",
+  "version": "1.0.0",
+  "description": "project of testing for podio.com",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Richardson94/API-UI_TestAutomation_Podio.com.git"
+  },
+  "author": "Richardson94",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Richardson94/API-UI_TestAutomation_Podio.com/issues"
+  },
+  "homepage": "https://github.com/Richardson94/API-UI_TestAutomation_Podio.com#readme"
+}
